@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="/assets/styles/banner.css"/>
+    <link rel="stylesheet" href="/assets/styles/footer.css"/>
+    <link rel="stylesheet" href="/assets/styles/root.css"/>
+    <link rel="stylesheet" href="/assets/styles/header.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico"/>
+    <title>TartarugArte</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logobusca">
+          <div class="logo">
+            <a href="index.html" class="header__logo__link">
+              <img src="/assets/logo.png" alt="logo Alura Geek" class="header__logo">
+            </a>
+          </div>
+          <div class="header__search hide">
+            <input type="text" class="search__input" placeholder="O que deseja encontrar?">
+            <a href="#" class="icon__search" data-search></a>
+          </div>
+        </div>
+        <div class="header__btn">
+          <a href="/views/login.html" class="header__login__link">
+            <button class="header__loginBtn">Login</button>
+          </a>
+        </div>
+      </div>
+    </header>
+    <i class="fa-solid fa-moon "></i>
+    </label>
+    <div class="search__btn none" data-btns>
+      <a class="search__link">
+        <img class="search__img" src="./assets/svg/icon-search.svg" alt="trooper icon button">
+      </a>
+    </div>
+
+    <!-- zona banner slider-->
+    <section class="banner_span1 hero">
+      <div class="hero__container banner__contenido contenedor">
+        <img src="/assets/turminha.png" alt="Turminha TartarugArte" class="hero__image">
+        <h2>Arte e sustentabilidade em cada produto</h2>
+        <h1>Salve as TARTARUGAS</h1>
+        <a href="#consolas" class="hero__btn__link">
+          <button class="hero__boton">Ver produtos</button>
+        </a>
+      </div>
+      <nav class="banner__nav-content">
+        <span id="span1" class="banner_nav banner_nav--select"></span>
+        <span id="span2" class="banner_nav"></span>
+        <span id="span3" class="banner_nav"></span>
+        <span id="span4" class="banner_nav"></span>
+      </nav>
+    </section>
+
+
+    <section class="geral-prods">
+      <div class="prod-titulo">
+        <div class="titulo">
+          <p>Moda</p>
+        </div>
+        <div class="mostrar-mais">
+          <div class="div-verTudo">
+            Ver Tudo <img class="verTudo" src="/assets/vetor.png" alt="seta" />
+          </div>
+        </div>
+      </div>
+      <section class="sessao-produtos" data-product></section>
+    </section>
+
+    <section class="geral-prods">
+      <div class="prod-titulo">
+        <div class="titulo">
+          <p>Decoração</p>
+        </div>
+        <div class="mostrar-mais">
+          <div class="div-verTudo">
+            Ver Tudo <img class="verTudo" src="/assets/vetor.png" alt="seta" />
+          </div>
+        </div>
+      </div>
+      <section class="sessao-produtos" data-product></section>
+    </section>
+
+    <section class="geral-prods">
+      <div class="prod-titulo">
+        <div class="titulo">
+          <p>Diversos</p>
+        </div>
+        <div class="mostrar-mais">
+          <div class="div-verTudo">
+            Ver Tudo <img class="verTudo" src="/assets/vetor.png" alt="seta" />
+          </div>
+        </div>
+      </div>
+      <section class="sessao-produtos" data-product></section>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logolinks">
+          <div class="footer__logo">
+            <a href="">
+              <img src="/assets/logo.png" alt="">
+            </a>
+          </div>
+          <nav class="footer__links">
+            <ul>
+              <li><a href="#">Quem somos</a></li>
+              <li><a href="#">Conheça o projeto</a></li>
+              <li><a href="#">Tabela de medidas</a></li>
+              <li><a href="#">Nossas redes</a></li>
+              <li><a href="#">Anuncie aqui</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <form class="footer__contato">
+          <h2>Fale conosco</h2>
+          <div class="contato__nome">
+            <label class="label__nome" for="name">Nome</label>
+            <input class="nome" type="name" placeholder="Julia Maria" title="Apenas letras" required>
+          </div>
+          <div class="contato__nome">
+            <input class="nome" type="email" placeholder="seuemail@gmail.com" title="Este e-mail não é válido" required>
+          </div>
+          <textarea class="footer__textarea" name="" cols="30" rows="10" placeholder="Escreva sua mensagem aqui" required></textarea>
+          <input type="submit" class="submit">
+        </form>
+      </div>
+    </footer>
+    <section class="rodape">
+      <div class="rodape__container">
+        <a class="rodape__link" href="https://github.com/crislenenunes/tartarugarte" target="_blank" rel="nofollow nopenner no-referrer">
+          <img src="/assets/svg/git.png" alt="GitHub">
+        </a>
+        <a class="rodape__link" href="https://www.linkedin.com/in/crislenenunes/" target="_blank" rel="nofollow nopenner no-referrer">
+          <img src="/assets/svg/linkedin.png" alt="LinkedIn">
+        </a>
+        <a class="rodape__link" href="https://instagram.com/crislenenunez/" target="_blank" rel="nofollow nopenner no-referrer">
+          <img src="/assets/svg/insta.png" alt="Instagram">
+        </a>
+      </div>
+      <div class="rodape__credito">
+        <p>Crislene Nunes</p>
+      </div>
+    </section>
+
+    <script type="module" src="./services/modules.js"></script>
+    <script src="/controllers/banner.js"></script>
+    <script type="module" src="./assets/controllers/product.controller.js"></script>
+    <script src="/assets/scripts/validation.js"></script>
+  </body>
+</html>

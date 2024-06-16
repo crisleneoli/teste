@@ -1,0 +1,97 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.admin.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Adicione um ajuste de margin-top para o .contact__form */
+.contact__form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px; /* Ajuste para iniciar abaixo do menu */
+}
+
+.contact__form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact__form legend {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #44776F; /* Cor ajustada para verde escuro */
+}
+
+.contact__form div {
+  margin-bottom: 20px;
+}
+
+.contact__form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #44776F; /* Cor ajustada para verde escuro */
+}
+
+.contact__form input,
+.contact__form textarea,
+.contact__form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #6AB69D; /* Cor da borda ajustada para verde mais claro */
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #44776F; /* Cor do texto ajustada para verde escuro */
+}
+
+.contact__form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact__form span[role="alert"] {
+  display: block;
+  color: red;
+  margin-top: 4px;
+}
+
+.contact__form .button__blue {
+  background-color: #44776F; /* Cor de fundo ajustada para verde escuro */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact__form .button__blue:hover {
+  background-color: #6AB69D; /* Cor de fundo no hover ajustada para verde mais claro */
+}
+
+/* Estilo para o h1 */
+.contact__form h1 {
+  font-size: 2rem; /* Tamanho maior que a fonte normal */
+  font-weight: bold;
+  text-align: center; /* Centralizado */
+  color: #44776F; /* Cor ajustada para verde escuro */
+  margin-bottom: 20px; /* Espaço abaixo do h1 */
+}

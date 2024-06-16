@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link rel="stylesheet" href="/assets/styles/banner.css"/>
+    <link rel="stylesheet" href="/assets/styles/footer.css"/>
+    <link rel="stylesheet" href="/assets/styles/root.css"/>
+    <link rel="stylesheet" href="/assets/styles/header.css"/>
+    <link rel="stylesheet" href="/assets/styles/login.css"/>
+    <link rel="stylesheet" href="/assets/styles/add-produtos.css"/>
+    <link rel="stylesheet" href="/assets/styles/agregar-producto.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico"/>
+    <title>TartarugArte</title>
+    </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+          <div class="header__logobusca">
+              <div class="logo">
+                  <a href="index.html" class="header__logo__link">
+                      <img src="/assets/logo.png" alt="logo Alura Geek" class="header__logo">
+                  </a>
+              </div>
+    </header>
+
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Adicionar Produto</title>
+      <style>
+        /* Estilos gerais */
+        body {
+          margin: 0;
+          font-family: 'Raleway', sans-serif;
+          background-color: #f0f0f0;
+        }
+    
+        .admin.container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          padding: 20px;
+          background-color: #f0f0f0;
+        }
+    
+        .contact__form {
+          width: 100%;
+          max-width: 600px;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .contact__form fieldset {
+          border: none;
+          padding: 0;
+          margin: 0;
+        }
+    
+        .contact__form legend {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+    
+        .contact__form div {
+          margin-bottom: 20px;
+        }
+    
+        .contact__form label {
+          display: block;
+          margin-bottom: 8px;
+          font-weight: bold;
+        }
+    
+        .contact__form input,
+        .contact__form textarea,
+        .contact__form select {
+          width: 100%;
+          padding: 10px;
+          font-size: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+    
+        .contact__form textarea {
+          resize: vertical;
+          min-height: 100px;
+        }
+    
+        .contact__form span[role="alert"] {
+          display: block;
+          color: red;
+          margin-top: 4px;
+        }
+    
+        .contact__form .button__blue {
+          background-color: #44776F;
+          color: #fff;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+    
+        .contact__form .button__blue:hover {
+          background-color: #6AB69D;
+        }
+      </style>
+    </head>
+    
+    <body>
+      <section class="admin container">
+
+
+        <form action="/produto&id<%= productId %>" method="POST" class="contact__form" data-id="<%= productId %>">
+          <fieldset>
+            <h1>Adicionar novo produto</h1>
+            <div>
+              <input type="text" class="img--src" name="imageSrc" hidden aria-hidden="true" />
+              <div class="drag__area">
+              <label class="drag__area--text">Arraste para adicionar uma imagem para o produto OU</label>
+              </div>
+              <label for="product__image" class="product__image--label"></label>
+              <input
+                type="file"
+                name="file"
+                id="product__image"
+                class="product__image--input"
+                accept="image/*"
+              />
+            </div>
+            <label for="product__name" class="sr-only">Nome do produto</label>
+            <input
+              type="text"
+              name="prodName"
+              id="product__name"
+              placeholder="Nome do produto"
+              data-type="name"
+              required
+            />
+            <span role="alert"></span>
+            <label for="product__price" class="sr-only">Preço do produto</label>
+            <input
+              type="text"
+              name="price"
+              inputmode="numeric"
+              id="product__price"
+              placeholder="Preço do produto"
+              data-type="price"
+              required
+            />
+            <span role="alert"></span>
+            <label for="product__description" class="sr-only">Descrição do produto</label>
+            <textarea
+              name="description"
+              id="product__description"
+              placeholder="Descrição do produto"
+              data-type="description"
+              required
+            ></textarea>
+            <span role="alert"></span>
+            <label for="product__image--alt" class="sr-only">Texto alternativo para a imagem</label>
+            <textarea
+              name="imgAlt"
+              id="product__image--alt"
+              placeholder="Texto alternativo"
+              data-type="alternate"
+              required
+            ></textarea>
+            <span role="alert"></span>
+            <label for="product__category" class="sr-only">Categoria do produto</label>
+            <select name="category" id="product__category" data-type="category" required>
+              <option value="" selected disabled>Selecione uma categoria:</option>
+              <option value="star-wars">Moda</option>
+              <option value="videogames">Decoração</option>
+              <option value="diversos">Diversos</option>
+            </select>
+            <span role="alert"></span>
+            <button type="submit" class="button__blue button">
+              Adicionar produto
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </body>
+    </main>
+
+      <section class="rodape">
+        <div class="rodape__container">
+          <a class="rodape__link" href="https://github.com/crislenenunes/tartarugarte" target="_blank" rel="nofollow nopenner no-referrer">
+            <img src="/assets/svg/git.png" alt="GitHub">
+          </a>
+          <a class="rodape__link" href="https://www.linkedin.com/in/crislenenunes/" target="_blank" rel="nofollow nopenner no-referrer">
+            <img src="/assets/svg/linkedin.png" alt="LinkedIn">
+          </a>
+          <a class="rodape__link" href="https://instagram.com/crislenenunez/" target="_blank" rel="nofollow nopenner no-referrer">
+            <img src="/assets/svg/insta.png" alt="Instagram">
+          </a>
+        </div>
+        <div class="rodape__credito">
+          <p>Crislene Nunes</p>
+        </div>
+      </section>
+  
+      <script type="module" src="./services/modules.js"></script>
+      <script src="/controllers/banner.js"></script>
+      <script type="module" src="./assets/controllers/product.controller.js"></script>
+      <script src="/controllers/admin.controllers.js"></script>
+      <script src="/controllers/add.js"></script>
+    </body>
+  </html>
+  

@@ -1,0 +1,136 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.login__container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 30%; 
+    padding: 2rem;
+    background-color: rgb(213, 213, 213);
+    border-radius: 32px;
+    box-shadow: 35px 35px 68px 0px #44776f55, inset -12px -12px 16px 0px #44776f55, inset 0px 11px 28px 0px rgb(255, 255, 255);
+    backdrop-filter: blur(8px);
+}
+
+.login__titulo {
+    width: 100%; 
+    text-align: center;
+    color: #44776f55;
+    font-size: 1.8rem;
+}
+
+.inputs {
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.inputs input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    border: 1px solid var(--preto-30, #C8C8C8);
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    color: var(--preto-50, #A2A2A2);
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do input */
+}
+
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.login__container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza verticalmente */
+    width: 30%; /* Largura inicial do formulário */
+    padding: 2rem;
+    background-color: rgb(213, 213, 213);
+    border-radius: 32px;
+    box-shadow: 35px 35px 68px 0px #44776f55, inset -12px -12px 16px 0px #44776f55, inset 0px 11px 28px 0px rgb(255, 255, 255);
+    backdrop-filter: blur(8px);
+}
+
+.login__titulo {
+    width: 100%; /* Ocupa toda a largura disponível */
+    text-align: center;
+    color: #44776F;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.inputs {
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.inputs input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    border: 1px solid var(--preto-30, #C8C8C8);
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    color: var(--preto-50, #A2A2A2);
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do input */
+}
+
+.login__submit {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 1.2rem 1.6rem;
+    background-color: #44776F;
+    border: none;
+    color: var(--preto-branco, #FFF);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    box-sizing: border-box; 
+    margin-top: auto;
+}
+
+.login__submit:hover {
+    background-color: #44776f55; 
+}
+
+@media screen and (max-width: 768px) {
+    .login__form {
+        width: 90%;
+    }
+}
+
+
+.login__submit:hover {
+    background:#44776f55; 
+}
+
+@media screen and (max-width: 768px) {
+    .login__form {
+        width: 90%;
+    }
+}

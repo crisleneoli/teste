@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link rel="stylesheet" href="/assets/styles/banner.css"/>
+    <link rel="stylesheet" href="/assets/styles/footer.css"/>
+    <link rel="stylesheet" href="/assets/styles/root.css"/>
+    <link rel="stylesheet" href="/assets/styles/header.css"/>
+    <link rel="stylesheet" href="/assets/styles/login.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico"/>
+    <title>TartarugArte</title>
+    <style>
+        .error-message {
+            display: none;
+            color: red;
+            margin-top: 10px;
+        }
+        .login__container.invalid .error-message {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logobusca">
+                <div class="logo">
+                    <a href="index.html" class="header__logo__link">
+                        <img src="/assets/logo.png" alt="logo Alura Geek" class="header__logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="login__container">
+            <div class="login__form">
+                <div class="login__titulo">Iniciar Sessão</div>
+                <form action="admin.html" method="POST" onsubmit="return validateForm(event)">
+                    <div class="inputs">
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Escreva seu email"
+                            required
+                        />
+                    </div>
+                    <div class="inputs">
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Escreva sua senha"
+                            required
+                        />
+                    </div>
+                    <button type="submit" class="login__submit">Entrar</button>
+                    <div class="error-message">Email ou senha incorretos.</div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <section class="rodape">
+        <div class="rodape__container">
+            <a class="rodape__link" href="https://github.com/crislenenunes/tartarugarte" target="_blank" rel="nofollow nopenner no-referrer">
+                <img src="/assets/svg/git.png" alt="GitHub">
+            </a>
+            <a class="rodape__link" href="https://www.linkedin.com/in/crislenenunes/" target="_blank" rel="nofollow nopenner no-referrer">
+                <img src="/assets/svg/linkedin.png" alt="LinkedIn">
+            </a>
+            <a class="rodape__link" href="https://instagram.com/crislenenunez/" target="_blank" rel="nofollow nopenner no-referrer">
+                <img src="/assets/svg/insta.png" alt="Instagram">
+            </a>
+        </div>
+        <div class="rodape__credito">
+            <p>Crislene Nunes</p>
+        </div>
+    </section>
+</body>
+</html>

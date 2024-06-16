@@ -1,0 +1,51 @@
+:root{
+    --azul-100: #034a3ea7;
+    --azul-10:rgb(234, 242, 253);
+    --preto-100:#034a3ea7;
+    --petro-50:#034a3e7d;
+    --preto-blanco:#FFFFFF;
+    --dark-gray: #034a3e5f;
+    --main-color: #034a3ea7;
+    --preto-30:rgb(200, 200, 200);
+    --preto-05: rgb(245, 245, 245);
+}
+
+html{
+    /* With this font-size,a  rem will be equal to 10px */
+    font-size: 62.5%;}
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    background: var(--preto-05, #034a3e3b);
+}
+    
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+a:hover{
+    
+    transform: scale(1.1);
+}
+
+li{
+    list-style: none;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+
+
+textarea:focus-visible{
+    outline: none;
+}
